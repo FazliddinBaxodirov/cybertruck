@@ -1,0 +1,18 @@
+@mixin title ($fw:600, $fs:28px, $clr:#fff,$lh:38.25px) {
+    font-weight: $fw;
+    font-size: $fs;
+    color: $clr;
+    line-height: $lh;
+}
+@mixin text ($fw:400, $fs:20px, $clr:#fff,$lh:30px) {
+    font-weight: $fw;
+    font-size: $fs;
+    color: $clr;
+    line-height: $lh;
+}
+
+@mixin display ($jc:space-between, $ai:center) {
+    display: flex;
+    justify-content: $jc;
+    align-items: $ai;
+}

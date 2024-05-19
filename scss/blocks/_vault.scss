@@ -1,0 +1,46 @@
+.vault {
+    padding: 0px 135px;
+}
+.vault__list {
+    @include display;
+    flex-direction: column;
+    gap: 80px;
+}
+.vault__item {
+    @include display;
+    flex-direction: column;
+    gap: 42px;
+}
+.vault__content{
+    width: 1170px;
+}
+.vault__title {
+    @include title;
+    margin-bottom: 16px;
+}
+.vault__text {
+    @include text;
+}
+
+
+@media (max-width:1200px){
+
+    .vault{
+        padding: 0px 30px;
+    }
+    .vault__img{
+        width: 100%;
+        height: auto;
+    }
+
+    .vault__content{
+        width: 100%;
+    }
+
+    .vault__title{
+        @include title ($fs:20px, $lh:25px);
+    }
+    .vault__text{
+        @include text ($fs:16px, $lh:22px);
+    }
+}
